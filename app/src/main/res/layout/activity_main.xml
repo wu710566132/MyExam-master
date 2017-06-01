@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bwie.com.myexam.MainActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_above="@+id/group"
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:paddingTop="10dp"
+            android:id="@+id/rg1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/comics"
+            android:gravity="center_horizontal" />
+
+        <RadioButton
+            android:paddingTop="10dp"
+            android:id="@+id/rg2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/find"
+            android:gravity="center" />
+
+        <RadioButton
+            android:paddingTop="10dp"
+            android:id="@+id/rg3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/community"
+            android:gravity="center_horizontal" />
+
+        <RadioButton
+            android:paddingTop="10dp"
+            android:id="@+id/rg4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/my"
+            android:gravity="center_horizontal" />
+    </RadioGroup>
+</RelativeLayout>
